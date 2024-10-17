@@ -20,6 +20,7 @@ Library: /Users/star/unityProject/LearningPenGrip/Temp/BurstOutput/tempburstlibs
 --assembly-defines=Newtonsoft.Json;
 --assembly-defines=Oculus.Interaction;
 --assembly-defines=Oculus.Interaction.OVR;
+--assembly-defines=Oculus.Interaction.Samples;
 --assembly-defines=Oculus.Platform;
 --assembly-defines=Oculus.VR;
 --assembly-defines=System.Configuration;
@@ -93,6 +94,7 @@ Library: /Users/star/unityProject/LearningPenGrip/Temp/BurstOutput/tempburstlibs
 --assembly-defines=Newtonsoft.Json;
 --assembly-defines=Oculus.Interaction;
 --assembly-defines=Oculus.Interaction.OVR;
+--assembly-defines=Oculus.Interaction.Samples;
 --assembly-defines=Oculus.Platform;
 --assembly-defines=Oculus.VR;
 --assembly-defines=System.Configuration;

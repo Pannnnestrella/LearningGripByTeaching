@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4539d4263ce6b42b1aef5a4132541b5c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - handTrackingObject: {instanceID: 0}
+  - jointPrefab: {instanceID: 0}
+  - redJointPrefab: {fileID: 2905209306368172902, guid: 6ceeae48acd33412ab3de259d60cb80a,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

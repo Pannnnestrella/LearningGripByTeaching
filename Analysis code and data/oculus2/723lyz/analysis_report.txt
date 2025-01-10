@@ -1,0 +1,28 @@
+User: 723lyz
+Stage 1 - Average Similarity: 72.11%
+Stage 2 - Average Similarity: 80.00%
+Stage 1 - Median Similarity: 76.47%
+Stage 2 - Median Similarity: 82.35%
+
+Percentage of Time Similarity > 80%:
+- Stage 1: 18.17%
+- Stage 2: 52.12%
+
+Similarity Distribution (in 5% bins):
+Stage 1: {'50-55': 8.41, '55-60': 12.73, '60-65': 9.67, '65-70': 0.0, '70-75': 12.23, '75-80': 38.78, '80-85': 7.17, '85-90': 10.85, '90-95': 0.15, '95-100': 0.0}
+Stage 2: {'50-55': 5.06, '55-60': 8.52, '60-65': 15.44, '65-70': 0.0, '70-75': 19.19, '75-80': 12.7, '80-85': 20.97, '85-90': 11.98, '90-95': 6.13, '95-100': 0.0}
+
+Performance Improvements:
+- Average Similarity Difference (Stage 2 - Stage 1): 7.89%
+- Median Similarity Difference (Stage 2 - Stage 1): 5.88%
+
+Variance and Standard Deviation:
+- Stage 1 Variance: 102.82
+- Stage 2 Variance: 204.72
+- Stage 1 Standard Deviation: 10.14
+- Stage 2 Standard Deviation: 14.31
+
+Significance Testing:
+- T-Statistic: -26.64
+- P-Value: 0.000000
+- Result: Significant

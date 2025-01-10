@@ -1,0 +1,28 @@
+User: 124
+Stage 1 - Average Similarity: 66.98%
+Stage 2 - Average Similarity: 66.03%
+Stage 1 - Median Similarity: 64.71%
+Stage 2 - Median Similarity: 64.71%
+
+Percentage of Time Similarity > 80%:
+- Stage 1: 15.82%
+- Stage 2: 6.81%
+
+Similarity Distribution (in 5% bins):
+Stage 1: {'50-55': 15.64, '55-60': 21.55, '60-65': 23.46, '65-70': 0.0, '70-75': 14.39, '75-80': 9.54, '80-85': 7.13, '85-90': 7.38, '90-95': 0.91, '95-100': 0.0}
+Stage 2: {'50-55': 13.93, '55-60': 19.59, '60-65': 27.82, '65-70': 0.0, '70-75': 16.41, '75-80': 15.44, '80-85': 4.59, '85-90': 2.22, '90-95': 0.0, '95-100': 0.0}
+
+Performance Improvements:
+- Average Similarity Difference (Stage 2 - Stage 1): -0.95%
+- Median Similarity Difference (Stage 2 - Stage 1): 0.00%
+
+Variance and Standard Deviation:
+- Stage 1 Variance: 118.32
+- Stage 2 Variance: 77.97
+- Stage 1 Standard Deviation: 10.88
+- Stage 2 Standard Deviation: 8.83
+
+Significance Testing:
+- T-Statistic: 3.89
+- P-Value: 0.000099
+- Result: Significant

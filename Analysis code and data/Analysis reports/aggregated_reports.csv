@@ -1,0 +1,9 @@
+User,Stage 1 - Average Similarity,Stage 2 - Average Similarity,Stage 1 - Median Similarity,Stage 2 - Median Similarity,Stage 1 - % Time Similarity > 80%,Stage 2 - % Time Similarity > 80%,Average Similarity Difference,Median Similarity Difference,Stage 1 - Variance,Stage 2 - Variance,Stage 1 - Standard Deviation,Stage 2 - Standard Deviation,T-Statistic,P-Value,Significance
+10086yly,82.31,89.18,82.35,88.24,0,0,6.87,5.88,115.95,78.14,10.77,8.84,-22.9,0.0,Significant
+101,81.08,91.46,82.35,94.12,0,0,10.38,11.76,112.17,55.47,10.59,7.45,-35.95,0.0,Significant
+102,82.77,81.43,82.35,82.35,0,0,-1.35,0.0,108.86,93.31,10.43,9.66,4.47,8e-06,Significant
+104,78.25,69.82,76.47,70.59,0,0,-8.43,-5.88,62.14,75.13,7.88,8.67,30.06,0.0,Significant
+107,63.63,66.86,64.71,64.71,0,0,3.24,0.0,59.35,128.4,7.7,11.33,-14.46,0.0,Significant
+124,66.98,66.03,64.71,64.71,0,0,-0.95,0.0,118.32,77.97,10.88,8.83,3.89,9.9e-05,Significant
+196,67.86,86.77,64.71,88.24,0,0,18.92,23.53,85.54,195.97,9.25,14.0,-47.93,0.0,Significant
+723lyz,72.11,80.0,76.47,82.35,0,0,7.89,5.88,102.82,204.72,10.14,14.31,-26.64,0.0,Significant

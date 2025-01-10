@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class HandJointVisualizer : MonoBehaviour
 {
-    public GameObject handTrackingObject; // 手部追踪对象
-    public GameObject jointPrefab;       // 默认关节预制件
-    public GameObject redJointPrefab;    // 不匹配关节预制件
-    public bool isActive = false;        // 控制脚本是否激活
-    public GripDataCollector gripDataCollector; // 引用 GripDataCollector
+    public GameObject handTrackingObject; 
+    public GameObject jointPrefab;      
+    public GameObject redJointPrefab;   
+    public bool isActive = false;        
+    public GripDataCollector gripDataCollector; // reference GripDataCollector
 
     private List<GameObject> _jointVisuals = new List<GameObject>();
     private OVRSkeleton _ovrSkeleton;
@@ -26,13 +26,13 @@ public class HandJointVisualizer : MonoBehaviour
 
         if (gripDataCollector != null)
         {
-            // 注册 GripDataCollector 的事件
+            // Registering Events for the GripDataCollector
             gripDataCollector.OnJointMismatch += HighlightMismatchedJoint;
             gripDataCollector.OnJointMatched += ResetJointToOriginal;
         }
         else
         {
-            Debug.LogError("GripDataCollector 未绑定，请在 Inspector 中设置。");
+            Debug.LogError("GripDataCollector is not bound, please set it in Inspector.");
         }
     }
 
@@ -72,7 +72,7 @@ public class HandJointVisualizer : MonoBehaviour
 
         if (_ovrSkeleton == null)
         {
-            Debug.LogError("OVRSkeleton 组件未找到，请检查 handTrackingObject 设置。");
+            Debug.LogError("OVRSkeleton component not found, check handTrackingObject setting.");
         }
     }
 
@@ -80,7 +80,7 @@ public class HandJointVisualizer : MonoBehaviour
     {
         if (_ovrSkeleton.Bones == null || _ovrSkeleton.Bones.Count == 0)
         {
-            Debug.LogError("OVRSkeleton 的 Bones 列表为空，无法初始化关节映射。");
+            Debug.LogError("The Bones list of OVRSkeleton is empty and the joint mapping cannot be initialised.");
             return;
         }
 
@@ -97,7 +97,7 @@ public class HandJointVisualizer : MonoBehaviour
             {
                 _mappedJoints[boneName] = boneIndex;
             }
-            Debug.Log($"关节映射: {bone.Id} -> {boneName}");
+          
         }
     }
 
@@ -116,7 +116,7 @@ public class HandJointVisualizer : MonoBehaviour
             _jointVisuals.Add(jointVisual);
         }
 
-        Debug.Log("关节可视化初始化完成！");
+        Debug.Log("Joint visualisation initialisation is complete!");
     }
 
     private void UpdateJointVisuals()
@@ -141,7 +141,7 @@ public class HandJointVisualizer : MonoBehaviour
     {
         if (_mappedJoints.TryGetValue(jointName, out int jointIndex) && jointIndex < _jointVisuals.Count)
         {
-            // Debug.Log($"关节 {jointName} 不匹配，替换为红色预制件。");
+            
             Destroy(_jointVisuals[jointIndex]);
             GameObject redJointVisual = Instantiate(redJointPrefab);
             redJointVisual.transform.parent = this.transform;
@@ -151,7 +151,7 @@ public class HandJointVisualizer : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning($"未找到关节 {jointName} 的映射！");
+            Debug.LogWarning($"No mapping found for joint {jointName}!");
         }
     }
 
@@ -159,7 +159,7 @@ public class HandJointVisualizer : MonoBehaviour
     {
         if (_mappedJoints.TryGetValue(jointName, out int jointIndex) && jointIndex < _jointVisuals.Count)
         {
-            // Debug.Log($"关节 {jointName} 恢复为默认预制件。");
+           
             Destroy(_jointVisuals[jointIndex]);
             GameObject originalJointVisual = Instantiate(jointPrefab);
             originalJointVisual.transform.parent = this.transform;
@@ -169,7 +169,7 @@ public class HandJointVisualizer : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning($"未找到关节 {jointName} 的映射！");
+            Debug.LogWarning($"No mapping found for joint {jointName}!");
         }
     }
 }

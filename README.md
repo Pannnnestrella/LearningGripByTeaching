@@ -2,10 +2,25 @@
 
 **LearningGripByTeaching** is a Unity-based project that demonstrates the concept of enhancing learning by teaching others. The system was developed using Unity 2022.3.21f1, a stable long-term support (LTS) version, in combination with the Oculus Integration SDK and Unity XR Interaction Toolkit to enable cross-platform compatibility and robust hand-tracking features. This repository contains both the Unity project and analysis code to evaluate user interaction data, specifically hand movements during pre-test and post-test phases.
 
-
 ## Overview
 
 This project uses Unity to create a learning environment where users’ hand data is automatically collected during the **pre-test** and **post-test** stages. The hand data is stored in the default Oculus folder. Additionally, the project can send real-time data to a computer via WebSocket for further analysis.
+
+## Requirements
+1. **Unity 2022.3.21f1 (LTS)**  
+   - This version ensures compatibility with the Oculus Integration SDK and Unity XR Interaction Toolkit.
+2. **Oculus Integration SDK** (if you plan to deploy to Oculus devices)
+3. **XR Interaction Toolkit** (for VR/AR functionalities)
+4. **Git** (to clone the repository)
+
+## Setup & Usage
+
+### Cloning the Repository
+1. Open your command line or terminal.
+2. Navigate to the directory where you want to store the project.
+3. Run the following command:
+   ```bash
+   git clone https://github.com/Pannnnestrella/LearningGripByTeaching.git
 
 ## Hand Data Collection
 During pre-test and post-test stages:
